@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <title>Reservatie - Mîr Café</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="Reservatie-nl.html">NL</a>
+            <a href="Reservation-fr.html">FR</a>
+        </div>
+        <h1 class="titel">Mîr Café</h1>
+
+    </header>
+    <nav class="sticky">
+
+        <div>
+            <h1><a href="home"><img class="logo" src="https://raw.githubusercontent.com/RalphCuizon/MI1-2018-2019-/master/klant/img/logo.jpg" alt="logo de Mîr Café"></a></h1>
+        </div>
+        <ul>
+            <li><a href="Index-nl.html">Home</a></li>
+            <li><a href="Menu-nl.html">Menu</a></li>
+            <li><a href="Reservatie-nl.html" class="active">Reservatie</a></li>
+            <li><a href="Contact-nl.html">Contact</a></li>
+            <li><a href="Map-nl.html">Map</a></li>
+        </ul>
+    </nav>
+    
+        <h2>Reservatie</h2>
+        <div class="reservatiecontainer">
+            <form enctype="text/plain" action="mailto:ralphr.cuizon@gmail.com" method="post">
+                <fieldset>
+                    <legend>Reservatie voor een Turks Ontbijt:</legend>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="voornaam">Voornaam</label>
+                        </div>
+                        <div class="kol-75">
+                            <input type="text" name="voornaam" id="voornaam" placeholder="Jouw Voornaam..." required>
+                        </div>
+                    </div>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="achternaam">Achternaam</label>
+                        </div>
+                        <div class="kol-75">
+                            <input type="text" name="achternaam" id="achternaam" placeholder="Jouw Achternaam..." required>
+                        </div>
+                    </div>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="kol-75">
+                            <input type="email" name="email" id="email" placeholder="Jouw Email..." required>
+                        </div>
+                    </div>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="Personen"> Hoeveel Personen</label>
+                        </div>
+                        <div class="kol-75">
+                            <input type="number" name="personen" min="1" max="4" id="Personen" placeholder="Reservatie van hoeveel personen..." required>
+                        </div>
+                    </div>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="datum">Datum</label>
+                        </div>
+                        <div class="kol-75">
+                            <input type="date" name="datum" id="datum" required>
+                        </div>
+                    </div>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="Tijd">Tijd</label>
+                        </div>
+                        <div class="kol-75">
+                            <select name="Tijd">
+                                <option value="Tien Uur Dertig">10:30</option>
+                                <option value="Elf Uur ">11:00</option>
+                                <option value="	Elf Uur Dertig"> 11:30</option>
+                                <option value="Twaalf Uur">12:00</option>
+                                <option value="Twaalf Uur Dertig">12:30</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="rij">
+                        <div class="kol-25">
+                            <label for="Opmerkingen">Opmerkingen</label>
+                        </div>
+                        <div class="kol-75">
+                            <textarea id="opmerkingen" name="opmerkingen" style="height: 100px" placeholder="Jouw Opmerkingen..."></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Doorsturen">
+                </fieldset>
+            </form>
+        </div>
+    
+
+    <footer>
+        <p>Gemaakt door Ralph Cuizon</p>
+    </footer>
+</body>
+
+</html>
